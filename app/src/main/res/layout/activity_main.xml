@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ButtonsMainActivity"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/dikablisIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/dikablisConnectedRB"
+        android:layout_alignParentLeft="true">
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dikablisIp"
+        android:layout_alignBottom="@+id/dikablisIp"
+        android:layout_toRightOf="@+id/dikablisIp"
+        android:text="Dikablis" />
+
+    <Spinner
+        android:id="@+id/taskS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/task_arrays"
+        android:layout_below="@+id/dikablisIp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/ipTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/silabConnectedRB"
+        android:layout_alignParentTop="true"
+        android:text="IP:" />
+
+    <RadioButton
+        android:id="@+id/silabConnectedRB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ipTv"
+        android:editable="false"
+        android:enabled="false"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/silabConnectedRB"
+        android:layout_alignBottom="@+id/silabConnectedRB"
+        android:layout_toRightOf="@+id/silabConnectedRB"
+        android:text="Silab connected" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="begin"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:width="100dp"
+        android:height="75dp"
+        android:onClick="onClickBegin" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="end"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignParentRight="true"
+        android:width="100dp"
+        android:height="75dp"
+        android:onClick="onClickEnd" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fail"
+        android:id="@+id/button3"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:width="100dp"
+        android:height="75dp"
+        android:onClick="onClickFail"/>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/taskS"
+        android:layout_alignParentRight="true"
+        android:id="@+id/trialRG"
+        android:focusableInTouchMode="false">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trial1"
+            android:id="@+id/trial1RB"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trial2"
+            android:id="@+id/trial2RB" />
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/dikablisConnectedRB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:enabled="false"
+        android:clickable="false"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:text="Dikablis connected" /><![CDATA[
+
+
+
+    android:layout_marginTop="30dp" />
+
+
+]]>
+</RelativeLayout>

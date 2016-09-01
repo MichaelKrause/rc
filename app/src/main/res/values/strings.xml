@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rc</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    
+    <string-array name="task_arrays">
+        <item>(1) Touch Config</item>
+        <item>(2) Touch Radio Tuning Task</item>
+        <item>(3) Touch Phone Normal (white)</item>
+        <item>(4) Touch Phone Delay (black)</item>
+        <item>(5) Touch Phone Occ (blue)</item>
+        <item>(6) Touch ABC</item>
+        <item>(7) DDS Kontaktauswahl</item>
+        <item>(8) DDS Navigation (ABC)</item>
+        <item>(9) DDS Telefonnummer</item>
+        <item>(10) DDS Config</item>
+        <item>(11) SPEZIAL Touch Radio Tuning</item>
+        </string-array>
+    
+</resources>
